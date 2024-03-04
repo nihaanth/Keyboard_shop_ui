@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+    <link rel="stylesheet" href="/style.css"> <!-- Link to the main CSS file -->
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="images/logo.png" width="190" height="150" alt="">
+        </a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="more_items.html">More Items</a>
+            <a href="special_offers.html">Special Offers</a>
+        </nav>
+    </header>
+
+    <section class="product-listing">
+        <div class="filter">
+            <label for="price-filter">Filter by Price:</label>
+            <select id="price-filter">
+                <option value="all">All</option>
+                <option value="10">$1 - $10</option>
+                <option value="20">$11 - $20</option>
+                <option value="30">$21 - $30</option>
+                <!-- Add more price ranges if needed -->
+            </select>
+        </div>
+        <div class="container">
+            <div class="product" data-price="10">
+                <img src="product1.jpg" alt="Product 1">
+                <h2>Product 1</h2>
+                <p>Description of Product 1.</p>
+                <p class="price">$10.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <!-- Repeat the product div for each product -->
+            <div class="product" data-price="20">
+                <img src="product2.jpg" alt="Product 2">
+                <h2>Product 2</h2>
+                <p>Description of Product 2.</p>
+                <p class="price">$12.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <!-- Repeat the product div for each product -->
+            <div class="product" data-price="30">
+                <img src="product3.jpg" alt="Product 3">
+                <h2>Product 3</h2>
+                <p>Description of Product 3.</p>
+                <p class="price">$14.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <!-- Repeat the product div for each product -->
+            <!-- Add more products here -->
+            <div class="product" data-price="30">
+                <img src="product4.jpg" alt="Product 4">
+                <h2>Product 4</h2>
+                <p>Description of Product 3.</p>
+                <p class="price">$19.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product" data-price="30">
+                <img src="product5.jpg" alt="Product 5">
+                <h2>Product 5</h2>
+                <p>Description of Product 3.</p>
+                <p class="price">$24.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <!-- Footer content -->
+    </footer>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
